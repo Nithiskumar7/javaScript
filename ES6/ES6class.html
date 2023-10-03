@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 CLASS</title>
+</head>
+<body>
+    <h1>ES6 CLASS</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+
+    <script>
+        class sample{
+            constructor(empId,empName){
+                this.empId = empId;
+                this.empName = empName;
+            }
+        }
+
+        const my1 = new sample(1001,"mani");
+        const my2 = new sample(1002,"yuvi");
+        
+        document.getElementById("demo1").innerHTML = my1.empId +" "+my2.empId;
+        document.getElementById("demo2").innerHTML = my2.empName +" "+my1.empName;
+    </script>
+</body>
+</html>

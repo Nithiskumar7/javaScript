@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <p id="f1"></p>
+
+    <script>
+        const myp1 = new Promise(function(myr1,myr2){
+            setTimeout(function(){
+                myr1("welcome to the function");
+            });
+        });
+
+        myp1.then(function(value){
+            document.getElementById("demo").innerHTML = value ;
+        });
+
+        function myfun1(x,y=10){
+            return x+y;
+        }
+        document.getElementById('f1').innerHTML = myfun1(100);
+    </script>
+</body>
+</html>
